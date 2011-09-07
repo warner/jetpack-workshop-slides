@@ -1,0 +1,21 @@
+
+* UK Jetpack Workshop (29-sep-2011), also Mozilla All-Hands (12-16 sep-2011)
+* probably one hour: 20min lecture, 30min hands-on, 10min wrap
+* limitations
+** parallel tracks, so don't depend too much upon the other tracks
+*** so less UI, less page-mod
+* ideas to get across:
+** modules help isolate code
+   - for JS devs who aren't used to programming in the large, this is new
+   - stable interface (and abstration boundaries) enable parallel
+     development, information-hiding
+     - so having separate teams work on interoperable modules might be a good
+       demo
+** modules can enforce security isolation
+   - fun demo could be to have one team write evil module, second team writes
+     good module, the two modules must correctly work together
+** modules help reuse code
+   - provide some pre-written modules to simplify certain tasks
+   - provide two assignments. The first could be written monolithically but
+     would be best written in pieces. The second re-uses one of those pieces.
+
