@@ -184,39 +184,24 @@
 </section>
 
 <section class="slide">
+<h1>Chrome Modules</h1>
+<br>
+<ul>
+  <li>Use <tt>require("chrome")</tt> to get XPCOM</li>
+</ul>
+<img class="panel" src="08-chrome.svg">
+<details>
+<ul>
+  <li>if you know XPCOM, you can make more APIs available to regular code by
+  writing a "chrome module"</li>
+</ul>
+</details>
+</section>
+
+<section class="slide">
 <h1>Thanks!</h1>
 <br>
 <!--<div align="center" class="fixed">http://people.mozilla.com/~bwarner/bitcoin/</div>-->
-</section>
-
-<section class="slide">
-<h1>Bonus Features: Scripts</h1>
-<br>
-<ul>
-  <li>Transactions actually contain script pairs</li>
-  <li>written in non-Turing-complete stack-based language</li>
-  <li>input script ("signature") executed, leaves data on stack</li>
-  <li>then output script ("pubkey") runs, evaluates data, approve/reject</li>
-  <li>enables neat stuff: multiple signatures, threshold sigs, smart
-  contracts</li>
-</ul>
-</section>
-
-<section class="slide">
-<h1>Scaling Through Specialization</h1>
-<br>
-<ul>
-  <li>Some scaling concerns can be resolved with specialized clients</li>
-  <ul>
-    <li>regular users don't need to mine</li>
-    <li>.. or even know the entire block chain</li>
-</ul>
-  <li>Small clients: hold private keys, rely on others for txn info</li>
-  <ul>
-    <li><a href="http://bitcoinjs.org">BitcoinJS</a> project has libraries</li>
-  </ul>
-  <li>Banks: they hold everything, do all the work</li>
-</ul>
 </section>
 
 <!-- Your Style -->
