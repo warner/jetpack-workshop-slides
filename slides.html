@@ -103,6 +103,21 @@
 </section>
 
 <section class="slide">
+<h1>Exercise: Make a Module</h1>
+<ul>
+  <li>Take a base64 encoder and turn it into a Jetpack module</li>
+  <li><a class="fixed" href="https://github.com/warner/jetpack-base64-demo">https://github.com/warner/jetpack-base64-demo</a></li>
+  <li><a class="fixed" href="http://www.webtoolkit.info/javascript-base64.html">http://www.webtoolkit.info/javascript-base64.html</a></li>
+</ul>
+<details>
+<ul>
+</ul>
+</details>
+</section>
+
+
+
+<section class="slide">
 <h1>Security Isolation</h1>
 <br>
 <ul>
@@ -117,8 +132,8 @@
 
 <section class="slide">
 <h1>POLA</h1>
-<br>
 <ul>
+  <li>Principle Of Least Authority</li>
   <li>Limits the damage of bugs or compromise</li>
   <li>Bad code doesn't have access to everything</li>
 </ul>
@@ -184,6 +199,60 @@
 </section>
 
 <section class="slide">
+<h1>Exercise: Github Status</h1>
+<br>
+<ul>
+  <li>GitHub: a git hosting provider</li>
+  <ul class="fixed">
+    <li><a href="http://developer.github.com/v3/">http://developer.github.com/v3/</a></li>
+    <li><a href="http://developer.github.com/v3/git/refs/">http://developer.github.com/v3/git/refs/</a></li>
+  </ul>
+  <li>Jetpack SDK code lives at <ul><a class="fixed" href="https://github.com/mozilla/addon-sdk">https://github.com/mozilla/addon-sdk</a></ul></li>
+  <li>Here is an addon to follow changes in Jetpack:</li>
+  <li><a class="fixed" href="https://github.com/warner/jetpack-repo-watcher">https://github.com/warner/jetpack-repo-watcher</a></li>
+</ul>
+<details>
+<ul>
+</ul>
+</details>
+</section>
+
+<section class="slide">
+<h1>Exercise: Github Status</h1>
+<br>
+<img class="panel" src="09-github.svg">
+<details>
+<ul>
+</ul>
+</details>
+</section>
+
+<section class="slide">
+<h1>Exercise: Split It Up</h1>
+<br>
+<img class="panel" src="10-split.svg">
+<details>
+<ul>
+</ul>
+</details>
+</section>
+
+<section class="slide">
+<h1>More Exercises</h1>
+<br>
+<ul>
+  <li>add password auth for private repos</li>
+  <li>include date of last change</li>
+  <li>watch multiple repos, only show latest change</li>
+  <li>write API module for other sites</li>
+</ul>
+<details>
+<ul>
+</ul>
+</details>
+</section>
+
+<section class="slide">
 <h1>Chrome Modules</h1>
 <br>
 <ul>
@@ -197,6 +266,23 @@
 </ul>
 </details>
 </section>
+
+<section class="slide">
+<h1>Jetpack Modules: The Future</h1>
+<br>
+<ul>
+  <li>require("http://path/to/your/module")</li>
+  <li>always-add "use strict;"</li>
+  <li>require(modname, parameters)</li>
+  <li>Harmony Modules</li>
+</ul>
+<details>
+<ul>
+</ul>
+</details>
+</section>
+
+
 
 <section class="slide">
 <h1>Thanks!</h1>
@@ -235,7 +321,7 @@
   div.left-footer { position: absolute; bottom: 20px; left: 50px;
                     font-size: 50% }
 
-  .fixed { font-family: fixed, Courier; font-size: 90% }
+  .fixed { font-family: fixed, Courier; font-size: 70% }
 
   /* the section is 800x600, we put an SVG image below the title */
   .panel { position: absolute;

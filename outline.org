@@ -19,3 +19,30 @@
    - provide two assignments. The first could be written monolithically but
      would be best written in pieces. The second re-uses one of those pieces.
 
+* workshop projects
+** github
+   - http://developer.github.com/v3/
+   - public info is visible with simple JSON HTTP interface
+   - private data can use HTTP basic-auth
+     - require("passwords").search({url:"https://github.com"
+*** latest-commit in repo X in status bar
+    - click on it, tab opens to that commit on github
+*** current jetpack release (https://api.github.com/repos/mozilla/addon-sdk/git/refs/tags)
+*** open pull requests
+
+* so addon to build is a github current-revision checker
+  - limited XHR, github API, top-level driver, statusbar-filler
+  - I provide the framework, a stub for the top-level driver, and the
+    statusbar-filler
+    - as a Builder project and a clonable git repo
+  - each student provides the rest (limited XHR, github API, top-level code)
+** extensions
+  - add password auth (I should provide a GithubPassword module)
+    - instantiate AuthorizedGithubAPI module such that top-level code doesn't
+      get the password
+  - watch multiple repos, only show the one that changed most recently
+  - include the date of last change
+  - write API module for some other site
+
+* maybe
+** require("./foo"), "../foo", "api-utils/panel"
